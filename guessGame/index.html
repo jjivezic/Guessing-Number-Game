@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 4 alpha CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="gameBox">
+            <h2>Guessing number game</h2>
+            <p>Try to guess number?</p>
+            <hr>
+            <div class="numInputs">
+                <button type="button" class="btnNum1">1</button>
+                <button type="button" class="btnNum2">2</button>
+                <button type="button" class="btnNum3">3</button>
+                <button type="button" class="btnNum4">4</button>
+            </div>
+            <div class="guessBlock">
+                <h3 class="btnTextValue">
+                    <span class="btnValue1">-</span>
+                    <span class="btnValue2">-</span>
+                    <span class="btnValue3">-</span>
+                    <span class="btnValue4">-</span>
+                </h3>
+                <h5 class="tryAgain">Try again</h5>
+                <hr>
+                <h3 class="guessLabel"> Your attempts (<span></span>):</h3>
+                <h3 class="repeatingGuesses"> </h3>
+            </div>
+            <input type="button" onclick="" value="Check" id="checkValue" class="btn btn-primary" data-toggle="modal" data-target="#modalBox" />
+
+            <input type="button" onclick="" value="New Game" id="newGame" class="btn btn-success" />
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <!-- The modal-->
+        <div class="modal fade" id="modalBox" tabindex="-1" role="dialog" aria-labelledby="modalLabelSmall" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                         </button>
+                        <h4 class="modal-title" id="modalLabelSmall">You Won</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <h4>Congratulation!!!</h4>
+                        <hr>
+                        <p>You had <span id="attempts"></span> attempts before number is guessed.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+
+    <!-- Tether -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap 4 Alpha JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!--<script src="js/script.js"></script>-->
+    <!--<script src="js/exercise.js"></script>-->
+    <!--<script src="js/exercise2n.js"></script>-->
+    <!--<script src="js/domacizadaci.js"></script>-->
+    <!--<script src="js/exercise3.js"></script>-->
+    <!--<script src="js/exercise5.js"></script>-->
+    <!--<script src="js/exercise6.js"></script>-->
+    <!--<script src="js/exercise7.js"></script>-->
+    <!--<script src="js/exercise8.js"></script>
+  <script src="js/exercise8.js"></script>
+    <script src="js/jquery.js"></script>-->
+    <script src="js/game.js"></script>
+</body>
+</body>
+
+</html>
